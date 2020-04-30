@@ -21,6 +21,87 @@
 	  </div>
 	</nav>
 
+	<!-- Painel e formulário -->
+	<form class="form-horizontal">
+    	<div class="panel panel-default">
+    		<div class="panel-heading">
+    			<h1 class="panel-title">Cadastro de Alunos</h1>
+    		</div>
+    		
+    		<!-- Corpo do painel -->
+    		<div class="panel-body">
+				
+				<!-- Imput Nome -->
+				<div class="form-group">
+					<label for="nome" class="col-sm-2 control-label">Nome</label>
+					<div class="col-sm-4"> 
+						<input type="text" class="form-control" id="nome"/>
+					</div>
+				</div>
+				
+				<!-- Imput CPF -->
+				<div class="form-group">
+					<label for="cpf" class="col-sm-2 control-label">CPF</label>
+					<div class="col-sm-2"> 
+						<input type="text" class="form-control" id="cpf"/>
+					</div>
+				</div>
+				
+				<!-- Imput RG -->
+				<div class="form-group">
+					<label for="rg" class="col-sm-2 control-label">RG</label>
+					<div class="col-sm-2"> 
+						<input type="text" class="form-control" id="rg"/>
+					</div>
+				</div>
+				
+				<!-- Imput Data Nascimento -->
+				<div class="form-group">
+					<label for="dataNascimento" class="col-sm-2 control-label">Data de Nascimento</label>
+					<div class="col-sm-2">  
+						<input type="text" class="form-control"	id="dataNascimento" />
+					</div>
+				</div>
+				
+				<!-- Imput Salário -->
+				<div class="form-group">
+					<label for="salario" class="col-sm-2 control-label">Salário</label>
+					<div class="col-sm-1">   
+						<input type="text" class="form-control" id="salario"/>
+					</div>
+				</div>
+				
+				<!-- Imput Descrição -->
+				<div class="form-group">
+					<label for="descricao" class="col-sm-2 control-label">Descrição</label>
+					<div class="col-sm-4"> 
+						<input type="text" class="form-control" id="descricao"/>
+					</div>
+				</div>
+				
+				<!-- Imput Select Status -->
+				<div class="form-group">
+					<label for="status" class="col-sm-2 control-label">Status</label>
+					<div class="col-sm-2">
+						<select class="form-control" id="status">
+							<option>Ativo</option>
+							<option>Pendente</option>
+							<option>Suspenso</option>
+							<option>Inativo</option>
+							<option>Expulso</option>
+                    	</select>
+                    </div>
+				</div>
+				
+				<!-- Botão salvar -->
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10"> <!-- Cria o espaço de recuo antes do botão offset -->
+						<button type="submit" class="btn btn-primary">Salvar</button>
+					</div>
+				</div>
+			</div>
+    	</div>
+    </form>
 
 
 <script src="/js/bootstrap.min.js"></script>
