@@ -26,7 +26,6 @@ public class Aluno
 	@Temporal(TemporalType.DATE)
 	private Date dataNascimento;
 	
-	
 	private BigDecimal salario;
 	private String descricao;
 	

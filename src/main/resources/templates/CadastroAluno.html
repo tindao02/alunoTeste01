@@ -22,7 +22,7 @@
 	</nav>
 
 	<!-- Painel e formulário -->
-	<form class="form-horizontal">
+	<form class="form-horizontal" method="POST" action="/alunos">
     	<div class="panel panel-default">
     		<div class="panel-heading">
     			<h1 class="panel-title">Cadastro de Alunos</h1>
@@ -35,7 +35,7 @@
 				<div class="form-group">
 					<label for="nome" class="col-sm-2 control-label">Nome</label>
 					<div class="col-sm-4"> 
-						<input type="text" class="form-control" id="nome"/>
+						<input type="text" class="form-control" id="nome" name="nome"/>
 					</div>
 				</div>
 				
@@ -43,7 +43,7 @@
 				<div class="form-group">
 					<label for="cpf" class="col-sm-2 control-label">CPF</label>
 					<div class="col-sm-2"> 
-						<input type="text" class="form-control" id="cpf"/>
+						<input type="text" class="form-control" id="cpf" name="cpf"/>
 					</div>
 				</div>
 				
@@ -51,7 +51,7 @@
 				<div class="form-group">
 					<label for="rg" class="col-sm-2 control-label">RG</label>
 					<div class="col-sm-2"> 
-						<input type="text" class="form-control" id="rg"/>
+						<input type="text" class="form-control" id="rg" name="rg"/>
 					</div>
 				</div>
 				
@@ -59,7 +59,7 @@
 				<div class="form-group">
 					<label for="dataNascimento" class="col-sm-2 control-label">Data de Nascimento</label>
 					<div class="col-sm-2">  
-						<input type="text" class="form-control"	id="dataNascimento" />
+						<input type="text" class="form-control"	id="dataNascimento" name="dataNascimento"/>
 					</div>
 				</div>
 				
@@ -67,7 +67,7 @@
 				<div class="form-group">
 					<label for="salario" class="col-sm-2 control-label">Salário</label>
 					<div class="col-sm-1">   
-						<input type="text" class="form-control" id="salario"/>
+						<input type="text" class="form-control" id="salario" name="salario"/>
 					</div>
 				</div>
 				
@@ -75,7 +75,7 @@
 				<div class="form-group">
 					<label for="descricao" class="col-sm-2 control-label">Descrição</label>
 					<div class="col-sm-4"> 
-						<input type="text" class="form-control" id="descricao"/>
+						<input type="text" class="form-control" id="descricao" name="descricao"/>
 					</div>
 				</div>
 				
@@ -83,12 +83,12 @@
 				<div class="form-group">
 					<label for="status" class="col-sm-2 control-label">Status</label>
 					<div class="col-sm-2">
-						<select class="form-control" id="status">
-							<option>Ativo</option>
-							<option>Pendente</option>
-							<option>Suspenso</option>
-							<option>Inativo</option>
-							<option>Expulso</option>
+						<select class="form-control" id="status" name="status">
+							<option value = "ATIVO">Ativo</option>
+							<option value = "PENDENTE">Pendente</option>
+							<option value = "SUSPENSO">Suspenso</option>
+							<option value = "INATIVO">Inativo</option>
+							<option value = "EXPULSO">Expulso</option>
                     	</select>
                     </div>
 				</div>
