@@ -12,6 +12,9 @@ import javax.persistence.Id;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.format.annotation.NumberFormat;
+
 @Entity
 public class Aluno 
 {
@@ -23,10 +26,13 @@ public class Aluno
 	private String cpf;
 	private String rg;
 	
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	@Temporal(TemporalType.DATE)
 	private Date dataNascimento;
 	
+	@NumberFormat(pattern = "#,##0.00")
 	private BigDecimal salario;
+	
 	private String descricao;
 	
 	@Enumerated(EnumType.STRING)
